@@ -129,6 +129,7 @@ public class G_Triple {
 		
 	} // method5 皋家靛 康开 场
 	
+	
 	//槛力2
 	public void method6() {
 		
@@ -154,11 +155,6 @@ public class G_Triple {
 		System.out.println(result);
 		
 	} // method6 皋家靛 康开 场
-	
-	
-	
-	
-	
 	
 
 }
