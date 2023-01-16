@@ -89,19 +89,19 @@ public class G_Triple {
 		sc.nextLine();
 		
 		String result = (num > 0) ? "양수입니다" : ((num == 0) ? "0 입니다" : "음수입니다");
-		System.out.printf(result);
+		System.out.println(result);
 		
 		
 	} // method4 메소드 영역 끝
 	
-	// 숙제
+	// 숙제1
 	public void method5() {
 		
 		/*
 		 * 두 개의 정수값과 '+' 또는 '-'의 문자를 하나 입력받아 
-		 * + 일 경우 두 정수값의 덧셈 연산한 결과 
-		 * - 일 경우 두 정수값의 뺄셈
-		 * 연산한 결과 둘 다 아닌 경우 "잘못입력했습니다."출력
+		 * + 일 경우 두 정수값의 덧셈 연산한 결과 (int)
+		 * - 일 경우 두 정수값의 뺄셈 연산한 결과 (int)
+		 * 연산한 결과 둘 다 아닌 경우 "잘못입력했습니다."(String) 출력
 		 * 
 		 * 예시)
 		 * 연산자 입력(+ or -) : -
@@ -112,9 +112,24 @@ public class G_Triple {
 		 * 힌트) 각 결과에 따른 값들이 자료형이 다름!
 		 */
 		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("연산자 입력(+ or -) : ");
+		char ch = sc.nextLine().charAt(0);
+		
+		System.out.print("첫번째 정수 : ");
+		int num1 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("두번째 정수 : ");
+		int num2 = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println((ch=='+') ? (num1+num2):((ch=='-') ? (num1-num2) : ("잘못입력했습니다.")));
+		
 	} // method5 메소드 영역 끝
 	
-	//숙제
+	//숙제2
 	public void method6() {
 		
 		/*
@@ -128,6 +143,15 @@ public class G_Triple {
 		 * 어린이입니다.
 		 * 
 		*/		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이를 입력하세요 : ");
+		int age = sc.nextInt();
+		sc.nextLine();
+		
+		String result = (age <= 13) ? "어린이 입니다" : ((age <= 19) ? "청소년 입니다" : "성인입니다"); 
+		
+		System.out.println(result);
 		
 	} // method6 메소드 영역 끝
 	
