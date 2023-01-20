@@ -72,8 +72,8 @@ public class A_Break {
 			System.out.println(str + "의 길이 : " + str.length());
 	
 		}
-		
 		System.out.println("프로그램이 종료됩니다.");
+		
 		// 만약 위의 무한반복이 끝나지 않는다면
 		// 마찬가지로 이 시점의 코드들은 Unreachable Code 가 되어버림
 		
