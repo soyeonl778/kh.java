@@ -235,7 +235,38 @@ public class B_ArrayCopy {
 		// 해시코드 비교
 		System.out.println("원본 배열의 해시코드 : " + origin.hashCode());
 		System.out.println("복사본 배열의 해시코드 : " + copy.hashCode());
+	}
+	
+	public void method11() {
 		
+		/*
+		 * 로또 번호 자동생성 프로그램
+		 * 
+		 * 로또 룰 : 1부터 45까지의 랜덤한 숫자 중 6개를 뽑는다 (중복x)
+		 *        뽑힌 숫자들을 작은 숫자에서부터 큰 숫자 순서대로 나열까지 해야함 (오름차순)
+		 * 힌트 : 오름차순으로 배열에 들은 숫자들을 재배치해주는 메소드
+		 * [표현법]
+		 * Arrays.sort(오름차순으로재배치하고자하는배열명);
+		 */
+		
+		int num[] = new int[6]; // 로또번호 6개
+		
+		for(int i = 0; i < num.length; i++) { 
+			
+			num[i] = (int)(Math.random() * 45 + 1);
+			
+			for(int j = 0; j < i; j++) {
+				
+				if(num[i] == num[j]) {
+					
+					i--;
+					break;
+				}
+			}
+			
+		}
+		Arrays.sort(num);
+		System.out.println(Arrays.toString(num));
 		
 	}
 

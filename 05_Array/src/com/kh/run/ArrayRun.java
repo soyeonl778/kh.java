@@ -39,7 +39,10 @@ public class ArrayRun {
 		
 		//b.method4();
 		
-		b.method5();
+		//b.method5();
+		
+		//b.method11();
+		
 		
 		
 	}

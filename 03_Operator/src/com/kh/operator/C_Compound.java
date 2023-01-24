@@ -51,20 +51,6 @@ public class C_Compound {
 		
 		
 		System.out.println(str);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 

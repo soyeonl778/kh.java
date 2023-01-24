@@ -75,8 +75,6 @@ public class C_cast {
 		// 참고) 아스키코드표 (0 ~ 127), 영문 대소문자, 숫자, 기본적인 특수문자)
 		//      유니코드표 ( 0 ~ 65xxx, 영문 대소문자, 숫자, 특수문자, 한글, 그 외 언어)
 		char ch = 65;
-		
-		
 		System.out.println("ch : " + ch); // 'A'
 		
 		int num = 'A';

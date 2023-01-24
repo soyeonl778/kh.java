@@ -4,6 +4,87 @@ import java.util.Scanner;
 
 public class VariablePractice {
 	
+	public void method1() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("이름을 입력하시오 : ");
+		String name = sc.nextLine();
+		
+		System.out.print("나이를 입력하세요 :");
+		int age = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("성별을 입력하세요(남/여) : ");
+		String gender = sc.nextLine();
+		
+		System.out.print("키를 입력하세요(cm) : ");
+		Double cm = sc.nextDouble();
+		sc.nextLine();
+		
+		System.out.printf("키 %.1f인 %d살 %s %s님 반갑습니다^^ \n", cm, age, gender, name);
+		// 왜 키부분이 소수점 6자리까지 나오는지 알다가도 모를 ;; 방법 찾았음!!! %.1f 하면 소수점 한자리까지 표기가능, .3 하면 세자리 표기!
+		
+	}
+	
+	public void method2() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("첫번째 정수를 입력하세요 : ");
+		int a = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("두번째 정수를 입력하세요 : ");
+		int b = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("더하기 결과 : " + (a+b));
+		System.out.println("빼기 결과 : " + (a-b));
+		System.out.println("곱하기 결과 : " + (a*b));
+		System.out.println("나누기 몫 결과 : " + (a/b));
+		System.out.println("나누기 나머지값 결과 : " + (a%b));
+		
+	}
+	
+	public void method3() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("가로 : ");
+		double a = sc.nextDouble();
+		sc.nextLine();
+		
+		System.out.print("세로 : ");
+		double b = sc.nextDouble();
+		sc.nextLine();
+		
+		System.out.println("면적 : " + (a*b));
+		System.out.println("둘레 : " + ((a*b)*2));
+		
+	}
+	
+	public void method4() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("문자열을 입력하시오 : ");
+		String str = sc.nextLine();
+		
+		char a = str.charAt(0);
+		char b = str.charAt(1);
+		char c = str.charAt(2);
+		
+		System.out.println("첫번째 문자 : " + a);
+		System.out.println("두번째 문자 : " + b);
+		System.out.println("세번째 문자 : " + c);
+		
+		
+		
+		
+	}
+	
+	
 	//숙제 1번 풀이
 	
 		public void inputTest3() {
@@ -100,7 +181,7 @@ public class VariablePractice {
 
 		}
 		
-		public void method3() {
+		public void method7() {
 			
 			Scanner sc = new Scanner(System.in);
 			

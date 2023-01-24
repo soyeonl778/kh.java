@@ -7,7 +7,13 @@ public class Run {
 		
 		VariablePractice v = new VariablePractice();
 		
+		//v.method1();
+		
+		//v.method2();
+		
 		//v.method3();
+		
+		//v.method4();
 		
 	}
 

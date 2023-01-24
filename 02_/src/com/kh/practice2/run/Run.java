@@ -12,6 +12,7 @@ public class Run {
 		CastingPractice c = new CastingPractice();
 		
 		//c.method2();
+		//c.method3();
 		
 		//c.method4();
 		
@@ -30,6 +31,14 @@ public class Run {
 		//o.practice6();
 		
 		//o.practice7();
+		
+		//o.practice8();
+		
+		//o.practice9();
+		
+		//o.practice10();
+		
+		// o.practice11();
 		
 		ConditionPractice p = new ConditionPractice();
 		
